@@ -1,15 +1,39 @@
 interactions:
 - request:
     body: null
-    headers: []
+    headers: {}
     method: GET
     uri: http://napiprojekt.pl/unit_napisy/dl.php?l=PL&f=abcdabdcabcd1234abcd1234abcd123&pass=&kolejka=false&nick=&v=dreambox&napios=Linux&t=4afc4
   response:
-    body: {string: 'NPc0'}
+    body: {string: !!python/unicode NPc0}
     headers:
       Connection: [keep-alive]
       Content-Type: [text/html]
       Date: ['Sat, 04 Jul 2015 20:26:34 GMT']
       Server: [nginx/1.6.0]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.8.1]
+    method: GET
+    uri: http://napiprojekt.pl/unit_napisy/dl.php?nick=&f=abcdabdcabcd1234abcd1234abcd123&kolejka=false&t=4afc4&napios=Linux&v=dreambox&pass=&l=PL
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA/MLSDYAAGrWOl4EAAAA
+    headers:
+      cache-control: [public]
+      connection: [close]
+      content-encoding: [gzip]
+      content-length: ['24']
+      content-type: [text/html]
+      date: ['Fri, 30 Oct 2015 01:10:15 GMT']
+      server: [Apache]
+      vary: [Accept-Encoding]
+      x-powered-by: [PleskLin]
     status: {code: 200, message: OK}
 version: 1
